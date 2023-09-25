@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-
 </head>
 <body>
     
@@ -21,7 +20,7 @@
         <div class="menu container">
 
             <a href="#" class="logo">Kinesio Mari</a>
-            <input type="checkbox" id="menu">
+            <input type="checkbox" class="menu"  id="menu">
             <label for="menu">
                 <img src="img/menu.png" class="menu-icono" alt="">
             </label>
@@ -33,9 +32,19 @@
                     <li><a href="#Opiniones">Opiniones</a></li>
                     <li><a href="#Contacto">Contacto</a></li>
                 </ul>
-            </nav>            
-
+            </nav>
         </div>
+
+        <script>
+            document.getElementById('menu-toggle').addEventListener('change', function() {
+                var navbar = document.querySelector('.navbar');
+                if (this.checked) {
+                    navbar.style.display = 'initial';
+                } else {
+                    navbar.style.display = 'none';
+                }
+            });
+        </script>
 
         <div id="Inicio" class="header-container">
             <div class="header-text">
@@ -43,7 +52,7 @@
                 <p> Recupera tu equilibrio, potencia tu rendimiento, y alcanza tu máximo potencial físico con nuestros tratamientos de kinesiología deportiva. Tu cuerpo merece lo mejor.
                 </p>
                 <div class="buttons">
-                    <a href="https://wa.link/of4ngl" class="btn-1">WhatsApp</a>
+                    <a href="https://es-la.facebook.com/marisol.canceco/" class="btn-1">WhatsApp</a>
                     <a href="https://es-la.facebook.com/marisol.canceco/" class="btn-1">Facebook</a>
             </div>
         </div>
@@ -84,7 +93,7 @@
 
         <div class="Service">
             <img src="img/i5.svg" alt="">
-            <h3>Rehabilitaciones , Vendajes</h3>
+            <h3>Reabilitaciones , Vendajes</h3>
             <p>
                 Estos tratamientos se centran en la recuperación de lesiones musculares o articulares mediante masajes y, en ocasiones, la aplicación de vendajes terapéuticos. Ventajas: Facilita la recuperación de lesiones, reduce la inflamación, restaura la función muscular
             </p>
@@ -177,7 +186,7 @@
         </div>
         <div class="information-text">
             <span>Mas Info</span>
-            <h2>Rehabilitaciones</h2>
+            <h2>Reabilitaciones</h2>
             <hr>
             <div class="office">
                 <img src="img/i1.svg" alt="">
